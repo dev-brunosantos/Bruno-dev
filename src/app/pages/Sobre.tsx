@@ -1,11 +1,7 @@
 export default function Sobre() {
-    return (
+    return(
         <section>
-            <h1 style={{
-                    fontSize: '5rem', textAlign: 'center'
-                }}>
-                    TELA SOBRE
-                </h1>
+            <h1>TELA SOBRE</h1>
         </section>
     )
 }

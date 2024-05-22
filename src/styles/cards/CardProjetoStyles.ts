@@ -1,32 +1,39 @@
 import { styled } from 'styled-components';
 
-export const CardContainer = styled.div`
-    width: 500px;
+export const CardProjeto = styled.div`
+    width: 450px;
     height: 300px;
-    border: 1px solid;
+    border: solid;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
 `;
-
-export const CardInforContainer = styled.div`
+export const CardProjetoMobile = styled.div`
+    width: 280px;
+    height: 450px;
+    border: solid;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+`;
+export const ContainerCard = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    position: absolute;
+    left: 0;
+    top: 0;
+    /* bottom: 0; */
+    cursor: pointer;
 `;
-
-export const CardBtnContainer = styled.div`
-    width: 70%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    position: absolute;
-    bottom: 0;
-`;
+export const ContainerBtn = styled.div``;

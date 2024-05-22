@@ -1,18 +1,22 @@
-import { Menu } from "@/components/Menu";
+"use client"
+import { MenuComponent } from "@/components/MenuComponent";
 import Home from "./pages/Home";
-import Sobre from "./pages/sobre";
+import Sobre from "./pages/Sobre";
 import Projetos from "./pages/Projetos";
 import Contatos from "./pages/Contatos";
 
 export default function App() {
   return (
     <>
-      <Menu />
+      {/* CABEÇALHO E MENU DO PROJETO */}
+      <MenuComponent />
+      {/* CORPO DO PROJETO */}
       <main>
         <Home />
         <Sobre />
         <Projetos />
       </main>
+      {/* RODAPÉ DO PROJETO */}
       <footer>
         <Contatos />
       </footer>

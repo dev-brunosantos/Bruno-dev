@@ -3,32 +3,34 @@ import { styled } from 'styled-components';
 export const Cabecalho = styled.header`
     width: 100%;
     height: 70px;
-    border: 1px solid;
+    border-bottom: 1px solid;
     padding: 0 2%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: absolute;
-    top: 0;
+    position: relative;
     z-index: 999;
-`;
-export const LogoMarca = styled.div``;
-export const MenuPrincipal = styled.nav`
+    `;
+export const LogomarcaContainer = styled.header``;
+export const MenuPrincipal = styled.header`
     width: 35%;
     height: 100%;
-    /* background-color: #dadafa; */
     `;
-export const MenuItens = styled.ul`
+export const MenuItens = styled.header`
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 `;
-export const MenuLink = styled.li`
+export const MenuLinks = styled.header`
     list-style: none;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
-    text-align: center;
     text-transform: capitalize;
+    text-align: center;
+
+    a {
+        color: #000;
+    }
 `;

@@ -1,11 +1,7 @@
 export default function Projetos() {
-    return (
+    return(
         <section>
-            <h1 style={{
-                    fontSize: '5rem', textAlign: 'center'
-                }}>
-                    TELA PROJETOS
-                </h1>
+            <h1>TELA PROJETOS</h1>
         </section>
     )
 }

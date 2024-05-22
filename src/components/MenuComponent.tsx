@@ -1,32 +1,32 @@
 "use client"
-import {
-    Cabecalho, LogoMarca, MenuPrincipal,
-    MenuItens, MenuLink
+import { 
+    Cabecalho, LogomarcaContainer, 
+    MenuItens, MenuLinks, MenuPrincipal 
 } from "@/styles/MenuStyles"
 
+export const MenuComponent = () => {
 
-export const Menu = () => {
+    const links:string[] = ['/', 'sobre', 'projetos', 'contatos']
 
-    const links: string[] = ['/', 'sobre', 'projetos', 'contatos']
-
-    return (
+    return(
         <Cabecalho>
-            <LogoMarca>
+            <LogomarcaContainer>
                 <h1>
                     <a href="">Bruno Santos</a>
                 </h1>
-            </LogoMarca>
+            </LogomarcaContainer>
+
             <MenuPrincipal>
                 <MenuItens>
                     {
                         links.map((link) => (
                             link === '/' ?
-                            <MenuLink key={`#${link}`}>
-                                <a href={link}>Home</a>
-                            </MenuLink> :
-                            <MenuLink key={link}>
+                            <MenuLinks key={link}>
+                                <a href={link}>home</a>
+                            </MenuLinks> :
+                            <MenuLinks key={link}>
                                 <a href={`#${link}`}>{link}</a>
-                            </MenuLink>
+                            </MenuLinks> 
                         ))
                     }
                 </MenuItens>
