@@ -1,36 +1,47 @@
-import { styled } from 'styled-components';
+import {styled} from 'styled-components';
 
 export const Cabecalho = styled.header`
     width: 100%;
-    height: 70px;
-    border-bottom: 1px solid;
-    padding: 0 2%;
+    height: 80px;
+    padding: 0 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
-    z-index: 999;
-    `;
-export const LogomarcaContainer = styled.header``;
-export const MenuPrincipal = styled.header`
-    width: 35%;
+    background-color: var(--black);
+`;
+export const LogoContainer = styled.div``;
+export const MenuPrincipal = styled.nav`
+    width: 40%;
     height: 100%;
-    `;
-export const MenuItens = styled.header`
+    /* border: solid #fff; */
+    position: relative;
+`;
+export const MenuOpc = styled.ul`
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 `;
-export const MenuLinks = styled.header`
+export const MenuLinks = styled.li`
+    width: 120px;
+    padding: 5px 0;
     list-style: none;
+    color: #fff;
     font-size: 22px;
     font-weight: bold;
-    text-transform: capitalize;
     text-align: center;
-
-    a {
-        color: #000;
+    text-transform: capitalize;
+    /* text-decoration: underline; */
+    cursor: pointer;
+    
+    &:hover {
+        transition: 0.3s;
+        color: var(--azul2);
+        font-size: 21px;
+        text-shadow: 0px 0px 15px var(--azul);
+    }
+    &:focus-visible {
+        color: red;
     }
 `;
