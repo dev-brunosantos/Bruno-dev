@@ -2,12 +2,15 @@ import {styled} from 'styled-components';
 
 export const Cabecalho = styled.header`
     width: 100%;
-    height: 80px;
+    height: 60px;
     padding: 0 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--black);
+    position: fixed;
+    top: 0;
+    left: 0;
 `;
 export const LogoContainer = styled.div``;
 export const MenuPrincipal = styled.nav`

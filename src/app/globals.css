@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #fff;
+  text-decoration: none;
 }
 
 :root {
@@ -17,7 +17,12 @@ body {
   max-width: 1500px;
   height: 100%;
   max-height: auto;
+  color: #fff;
   background-color: var(--black2);
+}
+
+a {
+  color: #fff;
 }
 
 span {
@@ -32,7 +37,7 @@ span {
   /* background-color: var(--azul); */
   background-color: #fff;
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   transition: 0.3s;
   box-shadow: 5px 2px 15px var(--azul2);
 }

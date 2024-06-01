@@ -1,14 +1,16 @@
 "use client"
-import { useState } from "react";
 import { Menu } from "./components/Menu";
+import Inicio from "./pages/Inicio"
+import Sobre from "./pages/Sobre"
 
-export default function Home() {
-
-  const [corFundo, setCorFundo] = useState<string>('#239895')
-
+export default function App() {
   return (
     <>
       <Menu />
+      <main>
+        <Inicio />
+        <Sobre />
+      </main>
     </>
   );
 }
