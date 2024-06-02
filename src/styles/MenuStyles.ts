@@ -37,14 +37,13 @@ export const MenuLinks = styled.li`
     text-transform: capitalize;
     /* text-decoration: underline; */
     cursor: pointer;
-    
-    &:hover {
+    a {
+        color: #fff;
+    }
+    a:hover {
         transition: 0.3s;
         color: var(--azul2);
         font-size: 21px;
         text-shadow: 0px 0px 15px var(--azul);
-    }
-    &:focus-visible {
-        color: red;
     }
 `;
