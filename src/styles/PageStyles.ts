@@ -12,10 +12,13 @@ export const ContainerPage = styled.section`
 export const ContainerInfor = styled.div`
     width: 40%;
     height: 80%;
-    /* border: 1px solid; */
+    border: 1px solid;
     padding: 3rem;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
     justify-content: center;
+    h1 {
+        font-size: 2.5rem;
+    }
 `

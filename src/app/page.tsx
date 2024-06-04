@@ -10,8 +10,7 @@ export default function App() {
       <Menu />
       <main>
         <Inicio />
-        <Sobre />
-        <Projetos />
+        {/* <Projetos /> */}
       </main>
     </>
   );

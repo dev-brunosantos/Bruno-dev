@@ -1,31 +1,30 @@
 "use client"
 import React from "react"
 import { ContainerInfor, ContainerPage } from "../../styles/PageStyles"
-import { SobreInfor } from "../components/SobreInforComponent"
 
-import { FaGithub } from 'react-icons/fa'
-import Image from "next/image"
+import { ReactTyped } from "react-typed"
 
 export default function Inicio() {
-    return(
+    return (
         <ContainerPage id="home">
             <ContainerInfor>
-                <SobreInfor 
-                    nome="Bruno Santos"
-                    funcao="Developer Full Stack"
-                    descricao="Aqui é um teste de criação de um componente com várias estruturas"
-                    contato={() => alert('teste')}
-                >
-                    <FaGithub size={50} style={{color: 'var(--azul)'}}/>
-                    <FaGithub size={50} style={{color: 'var(--azul)'}}/>
-                    <FaGithub size={50} color={'red'}/>
-                </SobreInfor>
+                <h1>APRESENTAÇÃO DO USUÁRIO</h1>
+                <h3>
+                    Sou Desenvolvedor <br />
+                    <span>
+                        <ReactTyped
+                            strings={["Front-end", "Back-end", "Mobile"]}
+                            typeSpeed={50}
+                            backSpeed={50}
+                            loop={true}
+                            fadeOut={true}
+                        />
+                    </span>
+
+                </h3>
             </ContainerInfor>
             <ContainerInfor>
-                <img 
-                    src={'https://github.com/dev-brunosantos.png'}
-                    alt="ewrewrew"
-                />
+
             </ContainerInfor>
         </ContainerPage>
     )
