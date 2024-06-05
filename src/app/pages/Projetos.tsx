@@ -16,16 +16,32 @@ export default function Projetos() {
                 >
                 <h1>TESTE DE COMPONENTE</h1>
             </CardProjeto>
-
             <CardProjeto
-                className="card-projeto-mobile"
-                titulo="Projeto 2"
-                descricao=""
+                titulo="Projeto 1"
+                descricao="Esse projeto foi criado usando as seguintes tecnologias"
                 projeto={() => alert("Ir para Projeto")}
-            >
+                className="card-projeto-desktop"
+                >
                 <h1>TESTE DE COMPONENTE</h1>
-                <FaHtml5 size={50} />
             </CardProjeto>
+            <CardProjeto
+                titulo="Projeto 1"
+                descricao="Esse projeto foi criado usando as seguintes tecnologias"
+                projeto={() => alert("Ir para Projeto")}
+                className="card-projeto-desktop"
+                >
+                <h1>TESTE DE COMPONENTE</h1>
+            </CardProjeto>
+            <CardProjeto
+                titulo="Projeto 1"
+                descricao="Esse projeto foi criado usando as seguintes tecnologias"
+                projeto={() => alert("Ir para Projeto")}
+                className="card-projeto-desktop"
+                >
+                <h1>TESTE DE COMPONENTE</h1>
+            </CardProjeto>
+
+            
         </ContainerPage>
     )
 }

@@ -1,8 +1,9 @@
 import { styled } from 'styled-components';
 
 export const CardContainer = styled.div`
-    border: 1px solid var(--azul) ;
+    /* border: 1px solid var(--azul) ; */
     border-radius: 10px;
+    margin: 1rem 0;
     overflow: hidden;
     display: flex;
     flex-direction: column;

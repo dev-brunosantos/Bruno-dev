@@ -39,7 +39,8 @@ export const CardProjeto = ({
                     src="https://web41.com.br/wp-content/uploads/2022/02/sites-responsivos.png"
                     alt=""
                     style={{
-                        width: '100%', height: '100%'
+                        width: '100%', height: '100%',
+                        backgroundColor: 'var(--black)'
                     }}
                 />
             </CardImagem>
