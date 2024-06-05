@@ -112,3 +112,17 @@ img:hover {
   color: var(--azul2);
   text-shadow: 10px 10px 20px red;
 }
+
+/* ------- ESTILOS DE BOTÕES ------ */
+.btn-card-projeto {
+  width: 100px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  background-color: transparent;
+}

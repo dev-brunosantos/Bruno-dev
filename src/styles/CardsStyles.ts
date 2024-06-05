@@ -28,9 +28,16 @@ export const CardInfor = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #239895a5;
-    /* background-color: #00ffefa5; */
+    /* background-color: #239895a5; */
+    background-color: #242424c3;
 `;
 export const CardDescricao = styled.div``;
-export const CardBtn = styled.div``;
+export const CardBtn = styled.div`
+    width: 70%;
+    /* background-color: green; */
+    /* border: solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+`;
 

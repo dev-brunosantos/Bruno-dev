@@ -27,7 +27,7 @@ export default function Inicio() {
                     />
                 </h3>
                 <SobreMim>
-                    Sou um desenvolvedor com experiência em Javascript, dedicado em
+                    Desenvolvedor com experiência em Javascript, dedicado em
                     transformar ideias em soluções inovadoras por meio do domínio desta
                     poderosa linguagem de programação
                 </SobreMim>

@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { CardBtn, CardContainer, CardDescricao, CardImagem, CardInfor } from "@/styles/CardsStyles"
+import { Btn } from "../Botoes/Btn"
 
 interface CardInterface {
     img?: string,
@@ -54,11 +55,19 @@ export const CardProjeto = ({
                 <div className="container-tecnologia">
                     {children}
                 </div>
-                <CardBtn>
+                {/* <CardBtn>
                     <button onClick={projeto} >
                         Projeto
                     </button>
                     <button onClick={repositorio}>
+                        Repositório
+                    </button>
+                </CardBtn> */}
+                <CardBtn>
+                    <button onClick={projeto} className="btn-card-projeto">
+                        Projeto
+                    </button>
+                    <button onClick={repositorio} className="btn-card-projeto">
                         Repositório
                     </button>
                 </CardBtn>
