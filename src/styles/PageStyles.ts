@@ -2,12 +2,15 @@ import { styled } from 'styled-components';
 
 export const ContainerPage = styled.section`
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     background-color: var(--black2);
+
+    /* border: solid; */
 `; 
 // PAGINA HOME
 export const ContainerInfor = styled.div`

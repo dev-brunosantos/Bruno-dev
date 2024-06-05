@@ -19,7 +19,7 @@ export default function Inicio() {
                     <ReactTyped
                         strings={["Front-end", "Mobile", "Back-end"]}
                         typeSpeed={50}
-                        backSpeed={50}
+                        backSpeed={100}
                         loop={true}
                         fadeOut={true}
                         className="animacao"
@@ -50,7 +50,7 @@ export default function Inicio() {
                     <CardTecnologia link="">
                         <FaLinkedin size={30} className="redes-contato-home" />
                     </CardTecnologia>
-                    <CardTecnologia link="https://wa.me/5+5511985706834">
+                    <CardTecnologia link="https://wa.me/+5511985706834">
                         <FaWhatsapp size={30} className="redes-contato-home" />
                     </CardTecnologia>
                 </DivContainerHome>

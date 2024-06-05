@@ -2,7 +2,9 @@ import {styled} from 'styled-components';
 
 export const Cabecalho = styled.header`
     width: 100%;
+    /* max-width: 1500px; */
     height: 60px;
+    /* margin: 0 auto; */
     padding: 0 2rem;
     display: flex;
     align-items: center;
