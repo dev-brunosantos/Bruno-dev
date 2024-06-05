@@ -4,6 +4,7 @@ import { Cabecalho, LogoContainer, MenuLinks, MenuOpc, MenuPrincipal } from "@/s
 
 export const Menu = () => {
     const links: string[] = ['home', 'sobre', 'projetos', 'contatos']
+    // const links: string[] = ['home', 'projetos', 'contatos']
     const [linha, setLinha] = useState<string>('10px')
 
     const handleEscolhePagina = (txt: string) => {

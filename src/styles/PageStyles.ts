@@ -8,7 +8,7 @@ export const ContainerPage = styled.section`
     justify-content: center;
     background-color: var(--black2);
 `; 
-
+// PAGINA HOME
 export const ContainerInfor = styled.div`
     width: 40%;
     height: 80%;
@@ -19,6 +19,19 @@ export const ContainerInfor = styled.div`
     /* align-items: center; */
     justify-content: center;
     h1 {
+        margin-top: 3rem;
         font-size: 2.5rem;
     }
 `
+export const SobreMim = styled.p`
+    margin-top: 2rem;
+    font-style: italic;
+    /* border: solid; */
+    padding: 5px;
+    width: 490px;
+`;
+
+export const DivContainerHome = styled.div`
+    width: 100%;
+    /* border: 1px solid; */
+`;

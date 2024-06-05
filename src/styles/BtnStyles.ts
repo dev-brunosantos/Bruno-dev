@@ -10,9 +10,10 @@ export const BtnContainer = styled.button`
     background-color: transparent;
     cursor: pointer;
     &:hover {
+        transition: 0.3s;
         border: none;
         color: #fff;
+        box-shadow: 0px 2px 5px #fff;
         background-color: var(--azul);
-        transition: 0.3s;
     }
 `;

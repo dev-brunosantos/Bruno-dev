@@ -12,9 +12,8 @@ export const Btn = ({
     width, height, titulo, fontSize = '20px', onClick
 }: BtnInterface) => {
     return (
-        <BtnContainer
+        <BtnContainer onClick={onClick}
             style={{ width: width, height: height, fontSize: fontSize }}
-            onClick={onClick}
         >
             {titulo}
         </BtnContainer>
