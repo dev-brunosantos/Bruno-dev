@@ -13,8 +13,10 @@ export default function App() {
         <Inicio />
         <Sobre />
         <Projetos />
-        <Contatos />
       </main>
+      <footer>
+        <Contatos />
+      </footer>
     </>
   );
 }
