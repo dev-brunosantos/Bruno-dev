@@ -38,7 +38,8 @@ span {
 }
 
 .linha {
-  width: 100px;
+  /* width: 100px; */
+  width: 70px;
   height: 3px;
   border-radius: 20px;
   /* background-color: var(--azul); */
@@ -47,6 +48,11 @@ span {
   bottom: 10px;
   transition: 0.3s;
   box-shadow: 5px 2px 15px var(--azul2);
+
+  left: 8%;
+  /* left: 31.5%; */
+  /* left: 56.5%; */
+  /* left: 82.5%; */
 }
 
 /* img {
