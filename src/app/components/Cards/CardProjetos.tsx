@@ -55,14 +55,6 @@ export const CardProjeto = ({
                 <div className="container-tecnologia">
                     {children}
                 </div>
-                {/* <CardBtn>
-                    <button onClick={projeto} >
-                        Projeto
-                    </button>
-                    <button onClick={repositorio}>
-                        Repositório
-                    </button>
-                </CardBtn> */}
                 <CardBtn>
                     <button onClick={projeto} className="btn-card-projeto">
                         Projeto
