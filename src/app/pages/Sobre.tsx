@@ -6,19 +6,14 @@ import { CardProjeto } from "../components/Cards/CardProjetos"
 
 export default function Inicio() {
     return (
-        <ContainerPage id="sobre" style={{ backgroundColor: 'red' }}>
-            {
-                ProjetosInfor.map((projeto) => (
-                    <CardProjeto key={projeto.nome}
-                        titulo={projeto.nome}
-                        descricao={projeto.descricao}
-                        projeto={() => alert("Ir para Projeto")}
-                        className="card-projeto-desktop"
-                    >
-                        <h1>TESTE DE COMPONENTE</h1>
-                    </CardProjeto>
-                ))
-            }
+        <ContainerPage id="sobre" >
+            <div>
+                <h1 style={{
+                    fontSize: '6rem'
+                }}>
+                    PROJETOS
+                </h1>
+            </div>
         </ContainerPage>
     )
 }

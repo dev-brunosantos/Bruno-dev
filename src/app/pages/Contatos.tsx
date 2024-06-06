@@ -8,7 +8,7 @@ export default function Contatos() {
     const opcInput: string[] = ["Nome completo", "E-mail", "Telefone", "Titulo da Mensagem"]
 
     return (
-        <ContainerPage id="contatos">
+        <ContainerPage id="contatos" style={{ paddingTop: '80px' }}>
             <Formulario>
                 <ContainerForm>
                     {

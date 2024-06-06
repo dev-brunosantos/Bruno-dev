@@ -3,13 +3,13 @@ import React from "react"
 import { ContainerPage } from "../../styles/PageStyles"
 import { CardProjeto } from "../components/Cards/CardProjetos"
 
-import { FaHtml5 } from 'react-icons/fa'
+import { FaCss3, FaHtml5 } from 'react-icons/fa'
 
 import ProjetosInfor from '../../json/Projetos.json'
 
 export default function Projetos() {
     return (
-        <ContainerPage id="projetos">
+        <ContainerPage id="projetos" style={{ paddingTop: '80px' }}>
             {/* <CardProjeto
                 titulo="Projeto 1"
                 descricao="Esse projeto foi criado usando as seguintes tecnologias"
@@ -67,7 +67,7 @@ export default function Projetos() {
                         projeto={() => alert("Ir para Projeto")}
                         className="card-projeto-desktop"
                     >
-                        <h1>TESTE DE COMPONENTE</h1>
+                        <h1>Tecnologias</h1>
                     </CardProjeto>
                 ))
             }

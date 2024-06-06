@@ -11,7 +11,7 @@ export default function App() {
       <Menu />
       <main>
         <Inicio />
-        {/* <Sobre /> */}
+        <Sobre />
         <Projetos />
         <Contatos />
       </main>

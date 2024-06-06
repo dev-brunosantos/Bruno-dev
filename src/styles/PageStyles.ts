@@ -23,8 +23,10 @@ export const ContainerInfor = styled.div`
     /* align-items: center; */
     justify-content: center;
     h1 {
+        width: 100%;
         margin-top: 3rem;
-        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        font-size: 2.7rem;
     }
 `
 export const SobreMim = styled.p`
@@ -33,6 +35,7 @@ export const SobreMim = styled.p`
     /* border: solid; */
     padding: 5px;
     width: 490px;
+    /* width: 50%; */
 `;
 
 export const DivContainerHome = styled.div`
