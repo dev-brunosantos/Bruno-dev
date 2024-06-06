@@ -7,13 +7,6 @@ export const Menu = () => {
     // const links: string[] = ['home', 'projetos', 'contatos']
     const [linha, setLinha] = useState<string>('5%')
 
-    // const handleEscolhePagina = (txt: string) => {
-    //     if (txt == "sobre") { return setLinha('145px') }
-    //     else if (txt == "projetos") { return setLinha('280px') }
-    //     else if (txt == "contatos") { return setLinha('412px') }
-    //     return setLinha('10px')
-    // }
-
     const handleEscolhePagina = (txt: string) => {
         if(txt == "home") { return setLinha('5%') }
         else if (txt == "sobre") { return setLinha('31.5%') }
