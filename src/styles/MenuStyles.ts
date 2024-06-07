@@ -1,4 +1,4 @@
-import {styled} from 'styled-components';
+import { styled, css } from 'styled-components';
 
 export const Cabecalho = styled.header`
     width: 100%;
@@ -28,6 +28,7 @@ export const MenuOpc = styled.ul`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 `;
 export const MenuLinks = styled.li`
     width: 120px;

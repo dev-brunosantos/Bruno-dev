@@ -8,10 +8,10 @@ import Contatos from "./pages/Contatos";
 export default function App() {
   return (
     <>
-      <Menu />
+      {/* <Menu /> */}
       <main>
-        <Inicio />
-        <Sobre />
+        {/* <Inicio /> */}
+        {/* <Sobre /> */}
         <Projetos />
       </main>
       <footer>
