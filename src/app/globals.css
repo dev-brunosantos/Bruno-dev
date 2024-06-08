@@ -78,7 +78,7 @@ img:hover {
 
 .card-projeto-mobile {
   width: 280px;
-  height: 450px;  
+  height: 450px;
 }
 
 .card-infor-fechado {
@@ -99,11 +99,13 @@ img:hover {
   transition: 0.5s;
   overflow: hidden;
 }
+
 /* ------ ANIMAÇÃO ------ */
 .animacao {
   margin-left: 10px;
   color: red;
 }
+
 .redes-contatos {
   width: 80%;
   display: flex;
@@ -114,7 +116,7 @@ img:hover {
 /* ------ REDES CONTATOS HOME ------ */
 
 .redes-contato-home {
-  margin: 20px 30px 20px 0px ;
+  margin: 20px 30px 20px 0px;
   color: var(--azul2);
   text-shadow: 10px 10px 20px red;
 }
@@ -134,8 +136,18 @@ img:hover {
 }
 
 @media screen and (max-width: 800px) {
+  h2 {
+    font-size: 18px;
+  }
+
+  .animacao {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+
   .card-projeto-desktop {
     width: 85%;
     height: 250px;
   }
+
 }

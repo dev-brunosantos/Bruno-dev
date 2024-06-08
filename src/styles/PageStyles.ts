@@ -11,7 +11,7 @@ export const ContainerPage = styled.section`
     background-color: var(--black2);
 
     /* border: solid; */
-`; 
+`;
 // PAGINA HOME
 export const ContainerInfor = styled.div`
     width: 40%;
@@ -28,14 +28,27 @@ export const ContainerInfor = styled.div`
         margin-bottom: 1rem;
         font-size: 2.7rem;
     }
-`
+    @media (max-width: 800px) {
+        width: 80%;
+        /* border: solid red; */
+        padding: 1rem;
+        h1 {
+            font-size: 2rem;
+        }
+    }
+    `
 export const SobreMim = styled.p`
+    width: 490px;
     margin-top: 2rem;
     font-style: italic;
     /* border: solid; */
     padding: 5px;
-    width: 490px;
     /* width: 50%; */
+    @media (max-width: 800px) {
+        width: 100%;
+        padding: 0;
+        font-size: 16px;
+    }
 `;
 
 export const DivContainerHome = styled.div`
