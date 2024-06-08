@@ -26,6 +26,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.menu-icone {
+  display: none;
+}
+
 .centralizar {
   display: flex;
   align-items: center;
@@ -148,6 +152,14 @@ img:hover {
   .card-projeto-desktop {
     width: 85%;
     height: 250px;
+  }
+
+  .linha {
+    display: none;
+  }
+
+  .menu-icone {
+    display: block;
   }
 
 }
