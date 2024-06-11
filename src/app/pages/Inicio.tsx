@@ -35,13 +35,13 @@ export default function Inicio() {
 
                 <DivContainerHome >
                     <CardTecnologia link="https://github.com/dev-brunosantos">
-                        <FaGithub size={30} className="redes-contato-home" />
+                        <FaGithub className="redes-contato-home" />
                     </CardTecnologia>
                     <CardTecnologia link="">
-                        <FaLinkedin size={30} className="redes-contato-home" />
+                        <FaLinkedin className="redes-contato-home" />
                     </CardTecnologia>
                     <CardTecnologia link="https://wa.me/+5511985706834">
-                        <FaWhatsapp size={30} className="redes-contato-home" />
+                        <FaWhatsapp className="redes-contato-home" />
                     </CardTecnologia>
                 </DivContainerHome>
 
@@ -59,8 +59,8 @@ export default function Inicio() {
                 </DivContainerHome>
             </ContainerInfor>
             {/* AQUI FICARÁ A FOTO DE PERFIL OU ALGUMA ANIMAÇÃO */}
-            <ContainerInfor>
-            </ContainerInfor>
+            {/* <ContainerInfor>
+            </ContainerInfor> */}
         </ContainerPage>
     )
 } 

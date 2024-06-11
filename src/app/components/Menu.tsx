@@ -8,7 +8,7 @@ export const Menu = () => {
     // const links: string[] = ['home', 'projetos', 'contatos']
     const [linha, setLinha] = useState<string>('5%')
 
-    const [abrirMenu, setAbrirMenu] = useState<string>("0%")
+    const [abrirMenu, setAbrirMenu] = useState<string>("0vh")
 
     const handleEscolhePagina = (txt: string) => {
         if(txt == "home") { return setLinha('5%') }
@@ -19,7 +19,7 @@ export const Menu = () => {
     }
 
     const handleAbrirMenu = () => {
-        abrirMenu === "0%" ? setAbrirMenu("100%") : setAbrirMenu("0%")
+        abrirMenu === "10vh" ? setAbrirMenu("100vh") : setAbrirMenu("0vh")
     }
 
     return (
@@ -29,12 +29,15 @@ export const Menu = () => {
                     Bruno <span> Santos</span>
                 </h1>
             </LogoContainer>
-            <MenuPrincipal style={{ height: abrirMenu }}>
-                <MenuOpc>
+            <MenuPrincipal >
+                <MenuOpc style={{ height: abrirMenu }}>
                     {
                         links.map((link) => (
                             <MenuLinks key={link}
-                                onClick={() => { handleEscolhePagina(link) }}
+                                onClick={() => { 
+                                    handleEscolhePagina(link) 
+                                    handleAbrirMenu()
+                                }}
                             >
                                 <a href={`#${link}`}>{link}</a>
                             </MenuLinks>
@@ -50,10 +53,7 @@ export const Menu = () => {
             <IoIosMenu 
                 size={30} 
                 className="menu-icone"
-                onClick={() => {
-                    alert('Funcinonou')
-                    handleAbrirMenu()
-                }}
+                onClick={handleAbrirMenu}
             />
         </Cabecalho>
     )

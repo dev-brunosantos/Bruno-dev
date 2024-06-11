@@ -12,6 +12,9 @@ export const CardTecnologia = ({
         <a
             href={link}
             target="_blank"
+            style={{
+                height: '100%'
+            }}
         >
             {children}
         </a>

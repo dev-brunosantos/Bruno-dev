@@ -42,6 +42,9 @@ span {
 }
 
 .linha {
+
+  display: none;
+
   /* width: 100px; */
   width: 70px;
   height: 3px;
@@ -122,6 +125,7 @@ img:hover {
 .redes-contato-home {
   margin: 20px 30px 20px 0px;
   color: var(--azul2);
+  font-size: 35px;
   text-shadow: 10px 10px 20px red;
 }
 
@@ -160,6 +164,13 @@ img:hover {
 
   .menu-icone {
     display: block;
+  }
+
+  .redes-contato-home {
+    height: 100%;
+    /* border: solid; */
+    margin: 0px;
+    font-size: 50px;
   }
 
 }

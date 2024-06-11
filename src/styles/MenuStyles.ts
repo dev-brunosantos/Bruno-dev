@@ -32,22 +32,24 @@ export const MenuPrincipal = styled.nav`
     @media (max-width: 800px) {
         position: absolute;
         top: 100%;
-        transition: 0.3s;
     }
 `;
 export const MenuOpc = styled.ul`
     width: 100%;
     height: 100%;
+    border: solid;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: 0.3s;
 
     @media (max-width: 800px) {
         width: 100vw;
-        height: 100vh;
+        height: 10vh;
+        overflow: hidden;
         justify-content: space-evenly;
-        border: solid red;
-        margin-left: 0;
+        /* border: solid red; */
+        margin-left: -10%;
         flex-direction: column;
         background-color: var(--black);
     }
@@ -72,7 +74,7 @@ export const MenuLinks = styled.li`
             transition: 0.3s;
             color: var(--azul2);
             /* font-size: 21px; */
-            font-size: 10%;
+            font-size: 120%;
         text-shadow: 0px 0px 15px var(--azul);
     }
 `;
