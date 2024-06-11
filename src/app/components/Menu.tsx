@@ -19,7 +19,7 @@ export const Menu = () => {
     }
 
     const handleAbrirMenu = () => {
-        abrirMenu === "10vh" ? setAbrirMenu("100vh") : setAbrirMenu("0vh")
+        abrirMenu === "0vh" ? setAbrirMenu("100vh") : setAbrirMenu("0vh")
     }
 
     return (

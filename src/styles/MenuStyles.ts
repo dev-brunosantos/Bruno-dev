@@ -37,7 +37,7 @@ export const MenuPrincipal = styled.nav`
 export const MenuOpc = styled.ul`
     width: 100%;
     height: 100%;
-    border: solid;
+    /* border: solid; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,7 +45,7 @@ export const MenuOpc = styled.ul`
 
     @media (max-width: 800px) {
         width: 100vw;
-        height: 10vh;
+        /* height: 10vh; */
         overflow: hidden;
         justify-content: space-evenly;
         /* border: solid red; */
