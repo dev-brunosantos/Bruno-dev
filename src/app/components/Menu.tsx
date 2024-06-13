@@ -8,7 +8,7 @@ export const Menu = () => {
     // const links: string[] = ['home', 'projetos', 'contatos']
     const [linha, setLinha] = useState<string>('5%')
 
-    const [abrirMenu, setAbrirMenu] = useState<string>("0vh")
+    const [abrirMenu, setAbrirMenu] = useState<string>("10vh")
 
     const handleEscolhePagina = (txt: string) => {
         if(txt == "home") { return setLinha('5%') }

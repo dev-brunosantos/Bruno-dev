@@ -37,7 +37,7 @@ export default function Inicio() {
                     <CardTecnologia link="https://github.com/dev-brunosantos">
                         <FaGithub className="redes-contato-home" />
                     </CardTecnologia>
-                    <CardTecnologia link="">
+                    <CardTecnologia link="https://www.linkedin.com/in/dev-bruno-santos/">
                         <FaLinkedin className="redes-contato-home" />
                     </CardTecnologia>
                     <CardTecnologia link="https://wa.me/+5511985706834">

@@ -24,7 +24,7 @@ export const Cabecalho = styled.header`
 export const LogoContainer = styled.div``;
 export const MenuPrincipal = styled.nav`
     width: 40%;
-    height: 100%;
+    /* height: 100%; */
     /* border: solid #fff; */
     position: relative;
     transition: 0.3s;
