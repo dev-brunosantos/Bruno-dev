@@ -31,7 +31,12 @@ export const CardInfor = styled.div`
     /* background-color: #239895a5; */
     background-color: #242424c3;
 `;
-export const CardDescricao = styled.div``;
+export const CardDescricao = styled.div`
+    width: 70%;
+    padding: 10px;
+    /* border: solid red; */
+    text-align: center;
+`;
 export const CardBtn = styled.div`
     width: 70%;
     /* background-color: green; */
@@ -39,5 +44,9 @@ export const CardBtn = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    a {
+        color: #fff;
+    }
+        
 `;
 

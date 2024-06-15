@@ -8,14 +8,15 @@ import ProjetosInfor from '../../json/Projetos.json'
 export default function Projetos() {
 
     const [dados, setDados] = useState([])
+    const dadosApi = dados
 
     useEffect(() => {
         async function BuscarDados() {
             const consulta = await fetch("https://api.github.com/users/dev-brunosantos/repos")
             const resposta = await consulta.json()
+            setDados(resposta)
 
             console.log(resposta)
-            setDados(resposta)
         }
 
         BuscarDados()
@@ -37,20 +38,21 @@ export default function Projetos() {
             } */}
 
             {
-                dados.map((dado: any) => (
-                    <CardProjeto key={dado.id}
+                dados.map((dado:any) => (
+                    <CardProjeto
+                        key={dado.id}
                         titulo={dado.name}
                         descricao={dado.description}
-                        projeto={() => alert("Ir para Projeto")}
+                        // projeto={() => alert("Ir para o projeto")}
+                        // repositorio={() => alert(dado.url)}
+                        projeto={""}
+                        repositorio={dado.html_url}
                         className="card-projeto-desktop"
                     >
-
                         <div></div>
                     </CardProjeto>
                 ))
-            }
-
-           
+            }           
 
         </ContainerPage>
     )

@@ -8,8 +8,10 @@ interface CardInterface {
     descricao: string,
     children: React.ReactNode,
     className: string,
-    projeto: () => void,
-    repositorio?: () => void
+    // projeto: () => void,
+    // repositorio?: () => void
+    projeto: string,
+    repositorio: string
 }
 
 export const CardProjeto = ({
@@ -56,11 +58,17 @@ export const CardProjeto = ({
                     {children}
                 </div>
                 <CardBtn>
-                    <button onClick={projeto} className="btn-card-projeto">
+                    {/* <button onClick={projeto} className="btn-card-projeto">
                         Projeto
                     </button>
                     <button onClick={repositorio} className="btn-card-projeto">
                         Repositório
+                    </button> */}
+                    <button className="btn-card-projeto">
+                        <a href={projeto} target="_blank" >Projeto</a>
+                    </button>
+                    <button className="btn-card-projeto">
+                        <a href={repositorio} target="_blank">Repositório</a>
                     </button>
                 </CardBtn>
             </CardInfor>
