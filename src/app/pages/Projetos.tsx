@@ -1,11 +1,24 @@
 "use client"
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { ContainerPage } from "../../styles/PageStyles"
 import { CardProjeto } from "../components/Cards/CardProjetos"
 
 import ProjetosInfor from '../../json/Projetos.json'
 
 export default function Projetos() {
+
+    const [dados, setDados] = useState()
+
+    useEffect(() => {
+        const consulta = fetch("https://api.github.com/users/dev-brunosantos/repos")
+            .then(res => res.json())
+            .then(resposta => {
+                resposta.forEach(dado => {
+                    setDados(dado)
+                })
+            })
+    })
+
     return (
         <ContainerPage id="projetos" style={{ paddingTop: '80px' }}>
             {
