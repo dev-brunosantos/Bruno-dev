@@ -7,14 +7,7 @@ import ProjetosInfor from '../../json/Projetos.json'
 
 export default function Projetos() {
 
-    const [dados, setDados] = useState<any>([])
-
-    const FunctionTeste = async (projeto) => {
-        const linguagens = await fetch(`https://api.github.com/repos/dev-brunosantos/${projeto}/languages`)
-        const testando = await linguagens.json()
-
-        console.log(testando)
-    }
+    const [dados, setDados] = useState([])
 
     useEffect(() => {
         async function BuscarDados() {
@@ -52,14 +45,12 @@ export default function Projetos() {
                         className="card-projeto-desktop"
                     >
 
-                        <div>
-                           <h1 onClick={async () => {
-                            await FunctionTeste(dado.languages_url)
-                           }} >Linguagens</h1>
-                        </div>
+                        <div></div>
                     </CardProjeto>
                 ))
             }
+
+           
 
         </ContainerPage>
     )
