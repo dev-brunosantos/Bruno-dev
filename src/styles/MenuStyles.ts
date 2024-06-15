@@ -23,7 +23,8 @@ export const Cabecalho = styled.header`
 `;
 export const LogoContainer = styled.div``;
 export const MenuPrincipal = styled.nav`
-    width: 40%;
+    /* width: 40%; */
+    width: 30%;
     /* height: 100%; */
     /* border: solid #fff; */
     position: relative;

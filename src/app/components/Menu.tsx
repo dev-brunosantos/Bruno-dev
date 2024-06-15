@@ -4,8 +4,8 @@ import { Cabecalho, LogoContainer, MenuLinks, MenuOpc, MenuPrincipal } from "@/s
 import { IoIosMenu } from 'react-icons/io'
 
 export const Menu = () => {
-    const links: string[] = ['home', 'sobre', 'projetos', 'contatos']
-    // const links: string[] = ['home', 'projetos', 'contatos']
+    // const links: string[] = ['home', 'sobre', 'projetos', 'contatos']
+    const links: string[] = ['home', 'projetos', 'contatos']
     const [linha, setLinha] = useState<string>('5%')
 
     const [abrirMenu, setAbrirMenu] = useState<string>("0vh")
